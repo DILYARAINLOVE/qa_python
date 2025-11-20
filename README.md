@@ -1,18 +1,16 @@
 # qa_python
 # Тесты для BooksCollector
 
-## Реализованные тесты:
-
-1. **test_add_new_book_valid_name** - проверка добавления книги с допустимым именем
-2. **test_add_new_book_duplicate** - проверка невозможности добавления дубликата
-3. **test_add_new_book_invalid_name** - проверка обработки недопустимых имен
-4. **test_set_book_genre_valid** - проверка установки допустимого жанра
-5. **test_set_book_genre_invalid_genre** - проверка отклонения недопустимого жанра
-6. **test_get_books_with_specific_genre** - проверка фильтрации по жанру
-7. **test_get_books_for_children** - проверка фильтрации детских книг
-8. **test_add_book_in_favorites** - проверка добавления в избранное
-9. **test_add_book_in_favorites_not_in_genre** - проверка защиты избранного
-10. **test_delete_book_from_favorites** - проверка удаления из избранного
-11. **test_get_books_genre_returns_copy** - проверка возвращения копии словаря
-
-Использована параметризация для тестов с разными допустимыми/недопустимыми именами.
+test_add_new_book_valid_name_adds_book - проверка добавления книги с допустимым именем
+test_add_new_book_duplicate_not_added - проверка невозможности добавления дубликата
+test_add_new_book_invalid_name_not_added - проверка обработки недопустимых имен
+test_set_book_genre_valid_genre_sets_genre - проверка установки допустимого жанра
+test_set_book_genre_invalid_genre_not_set - проверка отклонения недопустимого жанра
+test_get_books_with_specific_genre_returns_correct_books - проверка фильтрации по жанру (с книгами разных жанров)
+test_get_books_for_children_returns_appropriate_books - проверка фильтрации детских книг
+test_add_book_in_favorites_adds_to_favorites - проверка добавления в избранное
+test_add_book_in_favorites_not_in_genre_not_added - проверка защиты избранного (нельзя добавить несуществующую книгу)
+test_delete_book_from_favorites_removes_book - проверка удаления из избранного
+test_get_books_genre_returns_books_genre_dict - проверка получения словаря books_genre
+test_get_book_genre_returns_correct_genre - проверка получения жанра книги
+test_get_list_of_favorites_books_returns_favorites_list - проверка получения списка избранных книг

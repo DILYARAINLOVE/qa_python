@@ -1,1 +1,16 @@
 # qa_python
+# Тесты для BooksCollector
+
+test_add_new_book_valid_name_adds_book - проверка добавления книги с допустимым именем
+test_add_new_book_duplicate_not_added - проверка невозможности добавления дубликата
+test_add_new_book_invalid_name_not_added - проверка обработки недопустимых имен
+test_set_book_genre_valid_genre_sets_genre - проверка установки допустимого жанра
+test_set_book_genre_invalid_genre_not_set - проверка отклонения недопустимого жанра
+test_get_books_with_specific_genre_returns_correct_books - проверка фильтрации по жанру (с книгами разных жанров)
+test_get_books_for_children_returns_appropriate_books - проверка фильтрации детских книг
+test_add_book_in_favorites_adds_to_favorites - проверка добавления в избранное
+test_add_book_in_favorites_not_in_genre_not_added - проверка защиты избранного (нельзя добавить несуществующую книгу)
+test_delete_book_from_favorites_removes_book - проверка удаления из избранного
+test_get_books_genre_returns_books_genre_dict - проверка получения словаря books_genre
+test_get_book_genre_returns_correct_genre - проверка получения жанра книги
+test_get_list_of_favorites_books_returns_favorites_list - проверка получения списка избранных книг
